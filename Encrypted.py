@@ -20,7 +20,7 @@ def save_key_to_file(key, filename):
         file.write(key)
 
 # Read OBJ file
-with open('helmet.obj', 'r') as file:
+with open('technosphere.obj', 'r') as file:
     lines = file.readlines()
 
 # Generate keys for x, y, and z axes
@@ -47,7 +47,7 @@ for line in lines:
         encrypted_lines.append(line)
 
 # Save encrypted OBJ file
-with open('Encrypted_Helmet.obj', 'w') as file:
+with open('Encrypted_technosphere.obj', 'w') as file:
     for encrypted_line in encrypted_lines:
         file.write(encrypted_line)
 

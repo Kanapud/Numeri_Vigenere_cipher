@@ -20,7 +20,7 @@ key_y = load_key('key_y.txt')
 key_z = load_key('key_z.txt')
 
 # Read encrypted OBJ file
-with open('Encrypted_Helmet.obj', 'r') as file:
+with open('Encrypted_technosphere.obj', 'r') as file:
     encrypted_lines = file.readlines()
 
 # Decrypt vertices for x, y, and z axes
@@ -37,6 +37,6 @@ for line in encrypted_lines:
         decrypted_lines.append(line)
 
 # Save decrypted OBJ file
-with open('Decrypted_Helmet.obj', 'w') as file:
+with open('Decrypted_technosphere.obj', 'w') as file:
     for decrypted_line in decrypted_lines:
         file.write(decrypted_line)
